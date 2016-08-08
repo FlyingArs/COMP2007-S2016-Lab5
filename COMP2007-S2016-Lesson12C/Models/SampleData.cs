@@ -1,4 +1,11 @@
-﻿using System;
+﻿/** Authors & Student Number:
+    Fei Wang 200278460
+    Siqian Yu 200286902
+    Date Modified: 08-08-2016
+    File Description: This is the sample data to do the code first approach. 
+    **/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -177,10 +184,17 @@ namespace COMP2007_S2016_Lesson12C.Models
                 new Artist { Name = "Zeca Pagodinho" }
             };
 
+            var songs = new List<Song>
+            {
+                new Song { SongName = "Tom The Best" },
+                new Song { SongName = "Tom The Greatest"}
+            };
+
+
             new List<Album>
             {
-                new Album { Title = "A Copland Celebration, Vol. I", Genre = genres.Single(g => g.Name == "Classical"), Price = 8.99M, Artist = artists.Single(a => a.Name == "Aaron Copland & London Symphony Orchestra"), AlbumArtUrl = "/Assets/images/placeholder.gif" },
-                new Album { Title = "Worlds", Genre = genres.Single(g => g.Name == "Jazz"), Price = 8.99M, Artist = artists.Single(a => a.Name == "Aaron Goldberg"), AlbumArtUrl = "/Assets/images/placeholder.gif" },
+                new Album { Title = "A Copland Celebration, Vol. I", Song = songs.Single(g => g.SongName == "Tom The Best"), Genre = genres.Single(g => g.Name == "Classical"), Price = 8.99M, Artist = artists.Single(a => a.Name == "Aaron Copland & London Symphony Orchestra"), AlbumArtUrl = "/Assets/images/placeholder.gif" },
+                new Album { Title = "Worlds", Song = songs.Single(g => g.SongName == "Tom The Greatest"), Genre = genres.Single(g => g.Name == "Jazz"), Price = 8.99M, Artist = artists.Single(a => a.Name == "Aaron Goldberg"), AlbumArtUrl = "/Assets/images/placeholder.gif" },
                 new Album { Title = "For Those About To Rock We Salute You", Genre = genres.Single(g => g.Name == "Rock"), Price = 8.99M, Artist = artists.Single(a => a.Name == "AC/DC"), AlbumArtUrl = "/Assets/images/placeholder.gif" },
                 new Album { Title = "Let There Be Rock", Genre = genres.Single(g => g.Name == "Rock"), Price = 8.99M, Artist = artists.Single(a => a.Name == "AC/DC"), AlbumArtUrl = "/Assets/images/placeholder.gif" },
                 new Album { Title = "Balls to the Wall", Genre = genres.Single(g => g.Name == "Rock"), Price = 8.99M, Artist = artists.Single(a => a.Name == "Accept"), AlbumArtUrl = "/Assets/images/placeholder.gif" },

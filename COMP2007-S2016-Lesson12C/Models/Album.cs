@@ -38,5 +38,6 @@ namespace COMP2007_S2016_Lesson12C.Models
         public virtual string AlbumArtUrl { get; set; }
         public virtual Genre Genre { get; set; }
         public virtual Artist Artist { get; set; }
+        public virtual Song Song { get; set; }
     }
 }
